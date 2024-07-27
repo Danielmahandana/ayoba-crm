@@ -7,14 +7,14 @@ import logoutIcon from '../assets/logout.png'; // Ensure these images are placed
 import { StoreContext } from '../context/StoreContext';
 
 const Header: React.FC = () => {
-  const [showLogin, setShowLogin] = useState(false);
-  const { token, useToken } = useContext(StoreContext);
+  const [showLogin, setShowLogin] = useState(true);
+  const { token, setToken } = useContext(StoreContext);
 
   const router = useRouter(); // Use Next.js useRouter hook
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    useToken('');
+    setToken("");
     router.push('/'); // Use router.push for navigation in Next.js
   };
 

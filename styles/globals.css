@@ -105,6 +105,7 @@ button:hover{
 
 .profile{
   align-items: center;
+  cursor: pointer;
 }
 
 .p:hover{
