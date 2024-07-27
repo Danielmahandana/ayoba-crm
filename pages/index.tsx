@@ -1,7 +1,7 @@
 // pages/index.tsx
 import Layout from '../components/Layout';
 
-const Home: React.FC = () => {
+const Home: React.FC = ({ children }) => {
   return (
     <Layout>
       <h2 className="text-3xl font-bold mb-6 text-primary-dark">
