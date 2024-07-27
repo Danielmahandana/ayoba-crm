@@ -1,7 +1,8 @@
 import express from "express";
 import cors from "cors";
-import  { connDB } from "./config/config.js";
+import  { connDB } from "./config/db.js";
 import userRouter from "./routes/userRoutes.js";
+import 'dotenv/config'
 
 // app config
 const app = express();
