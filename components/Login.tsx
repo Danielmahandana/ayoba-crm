@@ -15,7 +15,7 @@ const Login: React.FC<LoginProps> = ({ setShowLogin }) => {
       <form className="login-container">
         <div className="login-title">
           <h2>{currentState}</h2>
-          <img onClick={() => setShowLogin(false)} src={cancel} alt='close' />
+          <img onClick={() => setShowLogin(false)} src={cancel} alt='X' />
         </div>
         <div className="login-input">
           {currentState === "Login" ? null : <input type="text" placeholder='Username' required />}

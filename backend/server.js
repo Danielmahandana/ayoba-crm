@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import  { connDB } from "./config/config.js";
+import userRouter from "./routes/userRoutes.js";
 
 // app config
 const app = express();
@@ -12,6 +13,9 @@ app.use(cors());
 
 // database connection
 connDB();
+
+// api endpoint
+app.use("/api/user",userRouter);
 
 // http method to request data from server
 app.get('/', (req, res) => {
