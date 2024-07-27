@@ -1,7 +1,7 @@
 // components/Login.tsx
 import React, { useState } from 'react';
 import '../styles/login.css';
-import cancel from '../styles/cancel.png';
+import cancel from '../assets/cancel.png';
 
 interface LoginProps {
   setShowLogin: (show: boolean) => void;
@@ -15,7 +15,7 @@ const Login: React.FC<LoginProps> = ({ setShowLogin }) => {
       <form className="login-container">
         <div className="login-title">
           <h2>{currentState}</h2>
-          <img onClick={() => setShowLogin(false)} src={cancel} alt='loginIcon' />
+          <img onClick={() => setShowLogin(false)} src={cancel} alt='close' />
         </div>
         <div className="login-input">
           {currentState === "Login" ? null : <input type="text" placeholder='Username' required />}
