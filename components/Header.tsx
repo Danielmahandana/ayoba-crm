@@ -20,19 +20,13 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <div className="container flex justify-between items-center">
+      <div className="container flex justify-between  items-center">
         <h1>Ayoba CRM</h1>
         {!token ? (
           <button onClick={() => setShowLogin(true)}>Login</button>
         ) : (
-          <div className="profile">
-            <img src={user.src} alt="User" />
-            <ul className="none">
-              <li onClick={handleLogout}>
-                <img src={logoutIcon.src} alt="Logout" />
-                <p>Log Out</p>
-              </li>
-            </ul>
+          <div onClick={handleLogout} className="profile">
+            <img src={user.src} alt="User" /> <p className='p'>Log Out</p>
           </div>
         )}
         <nav>

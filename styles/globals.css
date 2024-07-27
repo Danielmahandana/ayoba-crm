@@ -98,13 +98,16 @@ body {
     transition: 0.3s;
 }
 
-button:hover {
-    background-color: #d7d71ad7;
-}
-
-
-li:hover{
+button:hover{
   cursor: pointer;
   background-color: #d7d71ad7;
+}
+
+.profile{
+  align-items: center;
+}
+
+.p:hover{
+  color: #d7d71ad7;
 }
   
