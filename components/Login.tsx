@@ -59,7 +59,7 @@ const Login: React.FC<LoginProps> = ({ setShowLogin }) => {
       <form onSubmit={onLogin} className="login-container">
         <div className="login-title">
           <h2>{currentState}</h2>
-          <img onClick={() => setShowLogin(false)} src={cancel} alt='Cancel' />
+          <img onClick={() => setShowLogin(false)} src={cancel.src} alt='Cancel' />
         </div>
         <div className="login-input">
           {currentState === "Login" ? null : (

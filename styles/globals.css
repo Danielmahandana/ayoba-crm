@@ -87,18 +87,24 @@ body {
     border-radius: 0.25rem;
   }
   
-  .button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #2196f3;
-    color: #fff;
-    border: none;
-    border-radius: 0.25rem;
+  button{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid #d7d71ad7;
+    padding: 10px 30px;
+    border-radius: 50px;
     cursor: pointer;
-    text-align: center;
-  }
-  
-  .button:hover {
-    background-color: #1769aa;
-  }
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d7d71ad7;
+}
+
+
+li:hover{
+  cursor: pointer;
+  background-color: #d7d71ad7;
+}
   
