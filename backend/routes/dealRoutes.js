@@ -1,8 +1,8 @@
 import express from "express";
 import { addDeal } from "../controller/dealController.js";
 
-const userRouter = express.Router();
+const dealRouter = express.Router();
 
-userRouter.post("/deal",userRegister);
+dealRouter.post("/deal",addDeal);
 
-export default userRouter;
+export default dealRouter;
