@@ -19,8 +19,8 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header>
-      <div className="container flex justify-between  items-center">
+    <header className="bg-blue-600 text-white py-4">
+      <div className="container mx-auto px-6 flex justify-between items-center">
         <h1>Ayoba CRM</h1>
         {!token ? (
           <button onClick={() => setShowLogin(true)}>Login</button>
@@ -29,11 +29,6 @@ const Header: React.FC = () => {
             <img src={user.src} alt="User" /> <p className='p'>Log Out</p>
           </div>
         )}
-        <nav>
-          <Link href="/">Home</Link>
-          <Link href="/profile">Customer Profiles</Link>
-          <Link href="/pipeline">Sales Pipeline</Link>
-        </nav>
       </div>
       {showLogin && <Login setShowLogin={setShowLogin} />}
     </header>
