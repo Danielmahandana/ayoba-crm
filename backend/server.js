@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import  { connDB } from "./config/db.js";
 import userRouter from "./routes/userRoutes.js";
+import dealRouter from "./routes/dealRoutes.js";
 import 'dotenv/config'
 
 // app config
@@ -17,6 +18,7 @@ connDB();
 
 // api endpoint
 app.use("/api/user",userRouter);
+app.use("/api/user",dealRouter);
 
 // http method to request data from server
 app.get('/', (req, res) => {
