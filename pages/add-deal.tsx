@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Layout from '../components/Layout';
-import AddDealForm from '../components/AddDealForm';
+import AddDealForm from '../components/AddDeal';
 
 const AddDeal: React.FC = () => {
   return (
