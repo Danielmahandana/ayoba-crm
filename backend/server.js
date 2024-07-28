@@ -3,6 +3,7 @@ import cors from "cors";
 import  { connDB } from "./config/db.js";
 import userRouter from "./routes/userRoutes.js";
 import dealRouter from "./routes/dealRoutes.js";
+import customerRouter from "./routes/customerRoutes.js";
 import 'dotenv/config'
 
 // app config
@@ -18,7 +19,8 @@ connDB();
 
 // api endpoint
 app.use("/api/user",userRouter);
-app.use("/api/user",dealRouter);
+app.use("/api/deal",dealRouter);
+app.use("/api/client",customerRouter);
 
 // http method to request data from server
 app.get('/', (req, res) => {
